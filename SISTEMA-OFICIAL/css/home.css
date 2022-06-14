@@ -1,0 +1,335 @@
+/* Retirando as medidas automaticas de padding e margin. */
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Maximização da altura da estrutura do body e do HTML. */
+body,
+html {
+    height: 100%;
+}
+
+/* scroll-bar */
+
+/* Configurações de altura e largura da barra de rolamento. */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 100%;
+}
+
+/* Cor do fundo */
+::-webkit-scrollbar-track {
+    background-color: rgb(126, 126, 126);
+}
+
+/* Cor da barra de rolamento e configuração de sua borda. */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(190, 190, 190);
+    border-radius: 30px;
+}
+
+/*MENU HORIZONTAL*/
+
+/* Configuração de espaçamento interno do conteúdo da barra de menu horizontal, bem como de sua largura e cor de fundo. */
+.menu-h {
+    padding: 15px 10px 15px 10px;
+    width: 100%;
+    background-color: rgb(136, 197, 199);
+}
+
+/* Redimensionamento dos ícones das opções do menu horizontal. */
+.menu-h img {
+    width: 50px;
+    padding-right: 10px;
+}
+
+/* Definição do estilo de fonte utilizado nos links do menu horizontal. Aqui também foram marcadas as medidas de margin e padding dos textos em relação aos seus ícones e à própria barra de menu. */
+.menu-h a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Comando para que os links do menu horizontal fiquem sublinhados quando o cursor do mouse for passado em cima. */
+.menu-h a:hover {
+    text-decoration: underline;
+}
+
+/* O quarto item do menu, no caso o link de "SAIR", recebe nas linhas abaixo um comando que o posiciona no lado direito do menu horizontal. */
+.menu-h :nth-child(4) {
+    float: right;
+}
+
+/* Abaixo, a logo do Senai inserida no menu horizontal recebe alterações específicas em seu tamanho. Também impõe, através do padding-right, distanciamento dos ícones localizados a sua direita. */
+#logo-senai {
+    width: 300px;
+    padding-right: 50px;
+}
+
+/* Alterações específicas com respeito ao tamanho do ícone de "SAIR" (correção de seu alinhamento com os demais ícones através do margin-top). */
+#logo-sair {
+    width: 60px;
+    margin-top: -5px;
+}
+
+/*MENU VERTICAL*/
+
+/* Nas linhas abaixo, o menu vertical é posicionado abaixo do menu horizontal e na lateral esquerda da página. Há também comandos para definir a largura e os espaçamentos internos e externos dessa DIV. */
+.menu-v {
+    position: relative;
+    margin: 0 auto;
+    width: 265px;
+    padding-top: 30px;
+    padding-bottom: 250px;
+    background-color: rgb(212, 212, 212);
+    display: inline-block;
+}
+
+/* Estilização da fonte das tags "a" do menu vertical e centralização de cada opção desse menu, que estão contidos em botões. */
+.menu-v a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+/* Posicionamento centralizado do INPUT de pesquisa geral e de seu placeholder. */
+input.input-menu-v {
+    margin: 10px 0px 30px 38px;
+    text-align: center;
+}
+
+/* Nas linhas abaixo, os botões são posicionados um abaixo do outro, centralizados em relação a DIV do menu vertical e recebem largura e cor de borda. */
+.menu-v button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    border-width: 1px;
+    border-color: rgb(212, 212, 212)
+}
+
+/* Espaçamento interno dos botões. */
+button.botao {
+    padding: 0px 20px;
+}
+
+/* Comando para que, quando passado o cursor do mouse em cima, o fundo dos botões adotem a uma nova configuração de cor de fundo, recebendo um gradiente. */
+button.botao:hover {
+    background-image: linear-gradient(to bottom, white, rgb(168, 168, 168));
+}
+
+/* Estilização da fonte do texto/link dos botões. */
+button.botao a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+/*SUBMENU DE CADASTRO*/
+
+/* Configuração do sub-menu contido nos botões "CADASTRAR" e "CONSULTAR". Foram criados comandos para que a DIV desse sub-menu pudesse ficar próxima dos seus respectivos botões. Com o "display: none", o sub-menu permanece escondido até que o usuário passe seu cursor por cima dos botões. */
+.submenu-content {
+    margin: 0 auto;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    display: none;
+    background-color: #f9f9f9;
+}
+
+/* Estilização da fonte dos links contidos no sub-menu. O "display-block"  mantém as opções do sub-menu uma abaixo da outra. */
+.submenu-content a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+/* Comando para que os links do sub-menu mudem a cor de sua fonte e de seu fundo assim que o cursor do mouse for passado em cima. */
+.submenu-content a:hover {
+    background-color: #f1f1f1;
+    color: rgb(73, 165, 160);
+}
+
+/* Comando para que as informações contidas no sub-menu sejam exibidas quando o mouse for passado em cima do botão. */
+.btn-cadastrar:hover .submenu-content {
+    display: block;
+}
+
+/*FOOTER*/
+
+/* Rodapé configurado de modo a ocupar a largura máxima da página. Abaixo também há a definição dos espaçamentos internos do rodapé, do posicionamento lado a lado das imagens e listas e de um gradiente. */
+.footer {
+    width: 100%;
+    display: inline-flex;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(46, 46, 46));
+    padding: 15px 10px 15px 0px;
+}
+
+/* Configuração de largura e espaçamento externo das imagens do rodapé. */
+div.rodape-logo>img {
+    width: 200px;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+/* Redução do tamanho da margem esquerda das logos do rodapé. */
+div.rodape-logo {
+    margin-left: 0;
+}
+
+/* Alteração específica no tamanho da logo da empresa Mirtaw Systems. */
+img#mirtaw {
+    width: 300px;
+}
+
+/* Retirando o estilo das listas inseridas no rodapé. */
+.lista {
+    list-style: none;
+}
+
+/* Definição de estilo dos títulos posicionados acima das listas no rodapé, bem como de seu distanciamento destas listas. */
+.lista h5 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Estilização da fonte dos textos dentro de lista.*/
+.lista p,
+.lista a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Comando para que os textos dentro das tags "p" e "a" fiquem sublinhados ao passar o cursor por cima. Ao passar o mouse por cima de informações que não levam a nenhuma página, o cursor do mouse permanece em seu estado de ponteiro. */
+.lista p:hover,
+.lista a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* RESPONSIVIDADE */
+
+/* Abaixo estão comandos para que determinados conteúdos do site se redimensionem de acordo com o tamanho da janela. As configurações específicadas abaixo são aplicadas a partir do momento em que a janela de exibição possuir uma largura de 900px. */
+@media screen and (max-width: 900px) {
+    #logo-senai {
+        width: 250px;
+    }
+
+    #logo-sair {
+        width: 50px;
+    }
+
+    .menu-h img {
+        width: 50px;
+    }
+
+    .menu-h a {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .menu-v {
+        width: 150px;
+    }
+
+    button.botao a {
+        font-size: 15px;
+    }
+
+}
+
+/* ESTILO DA LETRA QUE ESTA NA FONTE "h2" */
+h2.estilo {
+    color: rgb(0, 0, 0);
+    background-color: rgb(207, 202, 202);
+    padding-right: 600px;
+    padding-left: 575px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.cards {
+    /* FAZENDO COM QUE O DISPLAY FIQUE EM GRADE E DEFININDO O ESPAÇAMENTO DESSA GRADE */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.cards {
+    /* ESTABELECENDO  */
+    max-width: 960px;
+    margin: 0 auto 30px;
+}
+
+/* DECLARANDO QUE POSIÇÃO DAS IMAGENS SERÃO RELATIVAS */
+article {
+    position: relative;
+}
+
+/* ALTURA E LARGURA DAS IMAGENS */
+.article-img {
+    height: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* POSIÇAO E ESTILO DO TITULO CASO SUA INTERNET ESTAJA RUIM NAO CARREGUE A IMAGEM */
+.article-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    color: aliceblue;
+    background-color: rgba(172, 44, 44, 0);
+}
+
+.bttnn {
+    /* COR,LARGURA E ALTURA, BORDA NA IMAGEM,FONTE,TIPO DO CURSOR E MARGEM */
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 45px;
+    border-radius: 20px;
+    border-color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* COR E TEMPO QUE DEMOA PARA FAZER A TRANSIÇÃO */
+.bttnn:hover {
+    background-color: black;
+    transition: 1.5s;
+    ;
+}
+
+/* MARGIN E COR */
+.tabhome2 {
+    margin: 0 auto;
+    color: black;
+}
+
+/* ALTURA E LARGURA E ESPAÇAMENTO DO CANTO ESQUERDO  */
+.tabhome2 img {
+    width: 300px;
+    height: 300px;
+    padding-left: 15px;
+}

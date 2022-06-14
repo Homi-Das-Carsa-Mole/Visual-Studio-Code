@@ -1,0 +1,102 @@
+
+/* CADASTRO DE LIVROS */
+
+/* DIV centralizada através do "margin-left" e configurada tanto para que os elementos contidos nela sejam posicionados tendo ela como referência, quanto para que a própria DIV não se posicionasse acima do menu vertical.*/
+.cadastro-livro {
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 25%;
+}
+
+/* Centralização dos títulos e definição de cor e sombreamento para estes. */
+.cadastro-livro h1 {
+    text-align: center;
+    color: rgb(160, 182, 192);
+    text-shadow: 2px 2px 4px rgb(0 0 0);
+}
+
+/* Os comandos abaixo determinam a largura da DIV que recebe os elementos concernentes ao cadastro, bem como sua cor de fundo e distanciamento de conteúdo interno e externo.*/
+.cadastro {
+    width: 1150px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    background-color: #d6d6d6;
+    border-radius: 20px;
+    box-shadow: 1px 1px 50px -35px;
+}
+
+/* O código abaixo se responsabiliza por criar uma grade com duas colunas. */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/* Formatação dos subtítulos que precedem os inputs. */
+.grid-item h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+}
+
+/* Os comandos abaixo definem a largura, o formato da borda, a cor da borda e o distanciamento de conteúdo interno e externo dos inputs. */
+.grid-item input {
+    width: 250px;
+    border-radius: 8px;
+    border-color: beige;
+    margin-bottom: 18px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+}
+
+/* Distanciando "ESTANTE" de "PRATELEIRA". */
+#estant-prat {
+    margin-right: 30px;
+}
+
+/* Estilo de fonte para os títulos dos inputs de "ESTANTE" e "PRATELEIRA" */
+h3#estant-prat {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+/* Definição da largura dos inputs de "ESTANTE" e "PRATELEIRA" */
+input#estant-prat {
+    width: 70px;
+}
+
+/* Especificação de altura, distanciamento de conteúdo externo, curvatura da borda e cor da borda do botão "CADASTRAR". */
+button#btn-cadastrar {
+    height: 50px;
+    margin-top: 40px;
+    border-radius: 8px;
+    border-color: beige;
+}
+
+/* Os comandos abaixo definem o estilo e tamanho da fonte do texto dentro do botão "CADASTRAR", bem como o espaçamento interno do texto em relação ao botão.  */
+button#btn-cadastrar a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Comando para que o fundo do botão "CADASTRAR" receba um gradiente ao passar o cursor do mouse em cima. */
+button#btn-cadastrar:hover {
+    background-image: linear-gradient(to bottom, white, rgb(168, 168, 168));
+}
+
+/* Configuração dos campos de seleção, contendo especificações para a largura desses campos, o distanciamento de conteúdo interno e externo, bem como o formato e a cor de sua borda. */
+.grid-item select {
+    width: 250px;
+    border-radius: 8px;
+    border-color: beige; 
+    margin-bottom: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+}

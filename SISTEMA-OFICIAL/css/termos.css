@@ -1,0 +1,66 @@
+.cadastro-livro {
+    position: absolute;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 300px;
+}
+
+.cadastro {
+    padding-top: 30px;
+    margin-top: 30px;
+    background-color: #96E6E1;
+    width: 700px;
+}
+/* div */
+.estilo1 {
+    margin: 60px 5px 200px 450px;/* para locomoção da div */
+    position: absolute; /* para posição dos na tela */
+    background-color: #d6d6d6; /* cor a div */
+    text-align: start; /* localização dos dentro da div */
+    text-decoration: solid;
+    font-size: 22px;  /* tamanho das letras */
+    font-family: Calibri; /* estilo da letra */
+    border-radius: 20px;  /* para o arredondamento das bordas da div */
+    width: 65%;  /* largura da div */
+    height: 600px; /* altura da div */
+    overflow: scroll;
+    
+} 
+.estilo1 h1{
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.estilo1 p{
+    width: 1100px;
+} 
+.estilo1 h2{
+        margin: 0 auto;
+        padding-left: 65px;
+        font-weight: bold;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        text-decoration: underline;
+        
+}
+.estilo1 p2{
+    padding-left: 65px;
+    width: 1100px;
+    font-weight: bold;
+    font-size: 18px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 100%;
+}
+::-webkit-scrollbar-track {
+    background-color:rgb(187, 190, 190);
+    height: 100%;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 253, 253);
+    border-radius: 30px;
+}
